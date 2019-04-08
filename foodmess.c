@@ -2,18 +2,18 @@
 #include<conio.h>
 int main()
 {
- int bt[20],p[20],wt[20],tat[20],pt[20],i,j,total=0,pos,temp,avg_wt,avg_tat;
+ int bt[20],n[20],wt[20],tat[20],pt[20],i,j,total=0,pos,temp,avg_wt,avg_tat;
  printf("enter the total no of process");
  scanf("%d\n",&n);
  printf("enter burst time and prority\n");
  for(i=0;i<n;i++)
  {
- printf("P[%d]\n",i+1);
+ printf("n[%d]\n",i+1);
  printf("Burst time:");
  scanf("%d"&bt[i]);
  printf("priority is:");
  scanf("%d",&pr[0]);
- p[i]=i+1;
+ n[i]=i+1;
  }
  //
  for(i=0;i<n;i++)
@@ -33,7 +33,7 @@ int main()
  bt[pos]=temp;
  
  temp=p[i];
- p[i]=p[pos];
+ n[i]=n[pos];
  p[pos]=temp;
  }
  wt[0]=0;    //waiting time for first process is zero
@@ -49,6 +49,19 @@ int main()
   //avreage waiting time
   avg_wt=total\n;
   total=0;
+  printf("process\n",bursttime,waitingtime);
+  for(i=1;i<n;i++)
+  {
+   tat=bt[i]+wt[i];   //turnaround time
+   total+=tat[i];
+   printf("%d,%d,%d\n",n[i],bt[i],wt[i],tat[i]);
+  }
+  avg_tat=total\n;  // avg turnaround time
+  printf("Average waiting time is %d:",avg_wt);
+  printf("Average turnaround time is %d:",avg_tat);
+  return 0;
+ }
+  
  
  
  
