@@ -38,6 +38,18 @@ int main()
  }
  wt[0]=0;    //waiting time for first process is zero
  
+  // calculate waiting time
+  for(i=1;i<n;i++)
+  {
+   wt[i]=0;
+   for(j=0;j<i;j++)
+    wt[i]=bt[j];
+   total+=wt[i];
+  }
+  //avreage waiting time
+  avg_wt=total\n;
+  total=0;
+ 
  
  
  
