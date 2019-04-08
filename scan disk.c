@@ -1,40 +1,55 @@
 #include<stdio.h>
 #include<conio.h>
-void scan_algorithm(int left[], int right[],int count,int limit)
+int main()
 {
-int arr[20];
-int x=count-1, y=count+1, c=0, d=0, j;
-while(x >-1)
+  int mReq[15],i,j,cylinder,curposition,prevposition,ninput,nsize,nlist[15],sortqlist[15],s,cal,sum,rev,result;
+  printf("enter the max size of cylinder disk drive");
+  scanf("%d\n",&cylinder);
+  printf("enter the current position of serving");
+  scanf("%d\n",&curposition);
+  printf("enter the pending queue list size");
+  scanf("%d\n",&nsize);
+  printf("enter pending %d queue number:",&qsize);
+  for(i=0;i<=nsize-1;i++);
+  scanf("%d\n",&nInput);
+  if(qinput>1)
+  {
+    qList[i]=qInput;
+  }
+}
+ for(i=0;i<=qsize-1;i++);
 {
-printf("%d\n",x);
-printf("%d,left",left[x]);
-arr[d]=left[x];
-x--;
-d++;
+  for(j=i+1;j<qSize;j++)
+  {
+    if(qList[i]>qList[j])
+    {
+      t = qList[i];
+      qList[i]=qList[j];
+      qList[j]=t;
+    }
+  }
 }
-arr[d]=0;
-while(y < limit+1)
+ for(i=0;i<qSize;i++); //print pending list queue 
+ printf("list[%d]:",i+1);
+ printf("%d\n:",qList[i]);
+}
+
+for(i=0;i<qSize-1;i++)
 {
-arr[y]=right[c];
-c++;
-y++;
-}
-printf("cylinder order is :\n");
-for(j=0; j<limit+1;j++)
-{
-printf("%d\n",arr[j]);
-}
-}
-void division(int element[],int limit,int disk_head)
-int count=0,p,q,m,x;
-int left[20],right[20];
-for(count=0;count<limit;count++)
-{
-if(element[count]> disk_head)
-{
-printf("%d\n",element[count]);
-break;
-}
-}
+  if(nList[i]>currposition)
+  {
+    calc=abs[qList[i+1]-qList[i]);
+    sum+=calc;
+    printf("%d\n",calc);
+      }
+   }
+      rev=abs(qList[0]-0);
+      printf("\nreverse : %d",rev);
+      result=sum+rev;
+      printf("sum is %d:",result);
+   }
+             
+             
+
 
 
