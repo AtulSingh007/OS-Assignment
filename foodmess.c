@@ -2,13 +2,13 @@
 #include<conio.h>
 int main()
 {
- int bt[20],n[20],wt[20],tat[20],pt[20],i,j,total=0,pos,temp,avg_wt,avg_tat;
+ int bt[20],n[20],wt[20],tat[20],pt[20],stud,teacher,total=0,pos,temp,avg_wt,avg_tat;
  printf("enter the total no of process");
  scanf("%d\n",&n);
  printf("enter burst time and prority\n");
  for(i=0;i<n;i++)
  {
- printf("n[%d]\n",i+1);
+ printf("n[%d]\n",stud+1);
  printf("Burst time:");
  scanf("%d"&bt[i]);
  printf("priority is:");
@@ -18,17 +18,17 @@ int main()
  //
  for(i=0;i<n;i++)
 {
- pos=i;
+ pos=stud;
  for(j=i+1;j<n;j++)
  {
  if(pr[j]<pr[pos])
- pos=j;
+ pos=teacher;
  {
- Temp=pr[i];
- pr[i]=pr[pos];
+ Temp=pr[stud];
+ pr[stud]=pr[pos];
  pr[pos]=temp;
  
- temp=bt[i];
+ temp=bt[stud];
  bt[i]=bt[pos];
  bt[pos]=temp;
  
